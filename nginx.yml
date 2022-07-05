@@ -19,4 +19,9 @@
       debug:
         msg: "Yay! This is {{ ansible_distribution }} !! "
       when: ansible_distribution == "CentOS"
+      
+    - name: copy a test file to /tmp
+      copy:
+        src: files/file1.txt
+        dest: /tmp/file1.txt
 ...
