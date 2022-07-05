@@ -13,4 +13,3 @@
     - name: Print some facts
       debug:
         msg: The facts are selinux info: "{{ ansible_selinux }}"
-...
