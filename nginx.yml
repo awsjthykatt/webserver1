@@ -13,4 +13,9 @@
     - name: Print some facts
       debug:
         msg: The facts are selinux info {{ ansible_selinux }}
+    
+    - name: Print when OS is CentOS
+      debug:
+        msg: "Yay! This is {{ ansible_distribution }} !! "
+      when: ansible_distribution == "CentOS"
 ...
