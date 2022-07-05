@@ -1,8 +1,12 @@
 ---
-- hosts: all
+- name: install nginx web server package
+  hosts: all
   gather_facts: true
   become: true
   become_user: root
+  
   tasks:
-    - dnf:
+    - name: nginx package task
+      dnf:
         name: nginx
+...
