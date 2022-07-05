@@ -9,4 +9,8 @@
     - name: nginx package task
       dnf:
         name: nginx
+        
+    - name: Print some facts
+      debug:
+        msg: The facts are selinux info: {{ ansible_selinux }}
 ...
