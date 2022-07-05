@@ -12,7 +12,7 @@
         
     - name: Print some facts
       debug:
-        msg: The facts are selinux info {{ ansible_selinux }}
+        msg: "The facts are selinux info {{ ansible_distribution }} ."
     
     - name: Print when OS is CentOS
       debug:
