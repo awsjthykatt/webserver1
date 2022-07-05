@@ -24,4 +24,10 @@
       copy:
         src: files/file1.txt
         dest: /tmp/file1.txt
+      notify: file1_handler
+        
+  handlers:
+  - name: file1_handler
+    debug:
+      msg: "The file file1.txt was placed in /tmp because it was different or it did not exist."
 ...
